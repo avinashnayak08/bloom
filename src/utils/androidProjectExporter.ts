@@ -179,7 +179,7 @@ class BloomApplication : Application(), Application.ActivityLifecycleCallbacks, 
     private var currentActivity: Activity? = null
 
     override fun onCreate() {
-        super.onCreate()
+        super<Application>.onCreate()
         registerActivityLifecycleCallbacks(this)
 
         preferencesRepository = UserPreferencesRepository(this)
@@ -540,6 +540,9 @@ import androidx.navigation.compose.rememberNavController
 import com.bloom.app.ui.screens.HomeScreen
 import com.bloom.app.ui.screens.OnboardingScreen
 import com.bloom.app.ui.theme.BloomTheme
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 
 class MainActivity : ComponentActivity() {
 
@@ -560,7 +563,7 @@ class MainActivity : ComponentActivity() {
                         isOnboardingCompleted = isOnboardingCompleted,
                         onCompleteOnboarding = { name, reminder ->
                             // Save completion in DataStore
-                            kotlinx.coroutines.CoroutineScope(kotlinx.coroutines.Dispatchers.IO).launch {
+                            CoroutineScope(Dispatchers.IO).launch {
                                 app.preferencesRepository.saveUserProfile(name, reminder)
                             }
                         }

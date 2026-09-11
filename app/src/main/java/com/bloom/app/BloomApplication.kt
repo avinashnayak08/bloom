@@ -25,7 +25,7 @@ class BloomApplication : Application(), Application.ActivityLifecycleCallbacks, 
     private var currentActivity: Activity? = null
 
     override fun onCreate() {
-        super.onCreate()
+        super<Application>.onCreate()
         registerActivityLifecycleCallbacks(this)
 
         preferencesRepository = UserPreferencesRepository(this)

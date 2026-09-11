@@ -1,0 +1,6 @@
+{
+  "name": "Bloom - PCOS Wellness & AdMob",
+  "description": "Native Android & Web wellness companion for PCOS management featuring AdMob App Open & Banner ads.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
