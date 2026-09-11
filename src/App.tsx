@@ -21,6 +21,7 @@ import {
   ShieldCheck,
   Info,
 } from 'lucide-react';
+import BloomLogo from './components/BloomLogo';
 import { generateAndroidZip, downloadAndroidZip } from './utils/androidProjectExporter';
 
 type TabType = 'today' | 'cycle' | 'care' | 'settings';
@@ -80,9 +81,7 @@ export default function App() {
       <header className="w-full bg-[#FAF8F5]/90 backdrop-blur-md border-b border-[#DFD6CF] py-2 px-4 sticky top-0 z-40 shadow-2xs">
         <div className="max-w-2xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-2.5">
-            <div className="w-7 h-7 rounded-xl bg-[#A5574D] text-white flex items-center justify-center font-serif text-sm font-bold shadow-xs">
-              B
-            </div>
+            <BloomLogo size="sm" />
             <div>
               <span className="font-serif font-bold text-sm sm:text-base text-[#2B2523]">Bloom Android</span>
               <span className="ml-2 text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800 border border-emerald-300 hidden sm:inline-block">
@@ -185,8 +184,8 @@ export default function App() {
                     {/* Step 1: Welcome */}
                     {onboardingStep === 1 && (
                       <div className="my-auto text-center py-6">
-                        <div className="w-16 h-16 rounded-2xl bg-[#A5574D] text-white mx-auto flex items-center justify-center font-serif text-3xl font-bold shadow-md mb-5">
-                          B
+                        <div className="flex justify-center mb-5">
+                          <BloomLogo size="xl" />
                         </div>
                         <h1 className="font-serif text-3xl italic text-[#2B2523] font-bold mb-2">
                           Welcome to Bloom
@@ -725,8 +724,8 @@ export default function App() {
                 </div>
 
                 <div className="text-center my-auto">
-                  <div className="w-16 h-16 rounded-2xl bg-[#A5574D] mx-auto flex items-center justify-center text-2xl font-bold font-serif mb-4 shadow-lg">
-                    B
+                  <div className="flex justify-center mb-4">
+                    <BloomLogo size="xl" />
                   </div>
                   <h3 className="font-serif text-xl italic font-bold">Google Test App Open Ad</h3>
                   <p className="text-xs text-neutral-400 mt-2 max-w-xs mx-auto leading-relaxed">

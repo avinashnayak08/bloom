@@ -3,7 +3,27 @@
     android:height="108dp"
     android:viewportWidth="108"
     android:viewportHeight="108">
-    <path
-        android:fillColor="#A5574D"
-        android:pathData="M54,20 C40,20 28,32 28,46 C28,68 54,88 54,88 C54,88 80,68 80,46 C80,32 68,20 54,20 Z" />
+    <!-- Bloom 4-Petal Flower Logo matching brand art -->
+    <group>
+        <!-- Top Petal -->
+        <path
+            android:fillColor="#A6524A"
+            android:pathData="M54,14 A15,23 0 0,1 54,60 A15,23 0 0,1 54,14 Z" />
+        <!-- Bottom Petal -->
+        <path
+            android:fillColor="#A6524A"
+            android:pathData="M54,48 A15,23 0 0,1 54,94 A15,23 0 0,1 54,48 Z" />
+        <!-- West Petal -->
+        <path
+            android:fillColor="#A6524A"
+            android:pathData="M14,54 A23,15 0 0,1 60,54 A23,15 0 0,1 14,54 Z" />
+        <!-- East Petal -->
+        <path
+            android:fillColor="#A6524A"
+            android:pathData="M48,54 A23,15 0 0,1 94,54 A23,15 0 0,1 48,54 Z" />
+        <!-- Center Golden Disc -->
+        <path
+            android:fillColor="#BA8336"
+            android:pathData="M54,43 A11,11 0 0,1 54,65 A11,11 0 0,1 54,43 Z" />
+    </group>
 </vector>

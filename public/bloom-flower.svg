@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bloomGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#A6524A" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#A6524A" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Ambient Glow -->
+  <circle cx="50" cy="50" r="46" fill="url(#bloomGlow)" />
+
+  <!-- Top-Left Gold Sparkle -->
+  <path
+    d="M13 3 Q13 9 17 9 Q13 9 13 15 Q13 9 9 9 Q13 9 13 3 Z"
+    fill="#BA8238"
+  />
+
+  <!-- Top-Right Rose Sparkle -->
+  <path
+    d="M94 19 Q94 23 97 23 Q94 23 94 27 Q94 23 91 23 Q94 23 94 19 Z"
+    fill="#C58C84"
+  />
+
+  <!-- Bottom-Left Gold Sparkle -->
+  <path
+    d="M6 89 Q6 94 10 94 Q6 94 6 99 Q6 94 2 94 Q6 94 6 89 Z"
+    fill="#BA8238"
+  />
+
+  <!-- Flower Petals (Terracotta #A6524A) -->
+  <g fill="#A6524A">
+    <!-- North Petal -->
+    <ellipse cx="50" cy="33.5" rx="13.5" ry="21.5" />
+    <!-- South Petal -->
+    <ellipse cx="50" cy="66.5" rx="13.5" ry="21.5" />
+    <!-- West Petal -->
+    <ellipse cx="33.5" cy="50" rx="21.5" ry="13.5" />
+    <!-- East Petal -->
+    <ellipse cx="66.5" cy="50" rx="21.5" ry="13.5" />
+  </g>
+
+  <!-- Center Circle (Warm Ochre / Mustard #BA8336) -->
+  <circle cx="50" cy="50" r="10.5" fill="#BA8336" />
+</svg>
